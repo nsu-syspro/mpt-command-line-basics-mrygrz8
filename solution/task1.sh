@@ -1,6 +1,6 @@
 tmpdir=$(mktemp -d)
 cd "$(find . -name "data")" 
 tar -xf archive-part1.tar -C "$tmpdir"
-unzip archive-part2.zip -d "$tmpdir"
-tar -czf /home/mary/mpt-command-line-basics-mrygrz8/data/archive-combined.tar.gz  "$tmpdir"
+unzip -q archive-part2.zip -d "$tmpdir"
+tar -czf archive-combined.tar.gz -C "$tmpdir" .
 rm -r "$tmpdir"
