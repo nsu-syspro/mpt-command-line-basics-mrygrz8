@@ -1,4 +1,3 @@
-cat "$(find . -name 'foo.txt')"
-cat "$(find . -name 'bar.txt')"
-cat "$(find . -name 'baz.txt')"
-
+cat "$(find . -name 'foo.txt' -print -quit)"
+cat "$(find . -name 'bar.txt' -print -quit)"
+cat "$(find . -name 'baz.txt' -print -quit)"
